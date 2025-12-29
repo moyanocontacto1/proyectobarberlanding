@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbero a Domicilio</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>BARBER DETAIL</h1>
+         <h2 id="pyp">Cortes precisos y profesionales</h2>
+    </header>
+
+    <section id="presentacion">
+        <p id="yo"> <b>💈 Tomás, Barbero Profesional (2021) 💈 </b>
+        <br>
+    </section>
+    <section id="services">
+        <h2>Servicios</h2>
+        <ul class="secciontipo">
+            <li>Corte Clásico – <b>€9</b></li>
+            <li>Corte Degradado (fade) – <b>€11</b></li>
+            <li>Corte Clasico + Arreglo de barba – <b>€13</b></li>
+            <li>Corte Degradado + Arreglo de barba – <b>€15</b></li>
+            <li>Descuento para grupos (3 o más personas✅)</li>
+            <li>Descuento para familias ✅</li>
+        </ul>
+    </section>
+    <section id="booking">
+        <h2>Reserva tu corte</h2>
+
+
+        <form id="bookingForm" autocomplete="on">
+            <label for="name">Nombre:</label>
+            <input type="text" id="nombre" name="name" required>
+            <label for="name">Numero de teléfono:</label>
+            <input type="tel" id="telefono" name="name" required placeholder="+34 600 123 456">
+            <label for="name">Gmail:</label>
+            <input type="email" id="email" placeholder="Tu correo electronico">
+            <label for="fecha">Día del corte:</label>
+            <input type="date" id="fecha" required>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" required>
+            <label for="location">Ubicación (barrio):</label>
+            <input type="text" id="location" name="location" required placeholder="Ej: La Chana">
+            <label for="corte">Tipo de corte</label>
+            <select id="corte" name="corte">
+                <option value="">Selecciona una opción</option>
+                <option value="8">Clásico (€8)</option>
+                <option value="10">Degradado (fade) (€10)</option>
+                <option value="14">Fade + barba (€14)</option>
+                <option value="12">Clásico + barba (€12)</option>
+            </select>
+            <label for="people">Número de personas:</label>
+            <input type="number" id="people" name="people" min="1" value="1" required> 
+            <label for="student"> <b>¿Sos estudiante?</b>  <br><br> 🎓 Tenes beneficios! Presentando tu carnet.</label>
+            <input type="checkbox" id="student" name="student">
+
+            <button type="button" id="calculatePrice">Calcular precio</button>
+        </form>
+        <p id="price"></p> <hr>
+        <p>Una vez terminado el proceso de reservar un turno, el barbero te enviará un mensaje a tu numero de whatsapp para confirmar tu cita y la ubicación 📍 <br>
+        También podes pedir cita a traves del boton de whatsapp haciendo click en la parte inferior derecha.</p> <hr> <br>
+
+        <div id="buttonOfEnd"> <button type="button" class="button-reservar">Enviar reserva</button></div>
+    </section>
+    <a href="https://wa.me/34662443500?text=Hola%20Tomás,%20quiero%20reservar%20un%20corte%el%dia%()%a%las%()hs" 
+   target="_blank" 
+   class="whatsapp-float">
+    WhatsApp
+</a>
+
+            <footer>
+                <p>📍 Granada Capital - Sierra nevada</p>
+                <p>📞 Contacto: 662443500 - Tomás</p>
+                <p>© 2025 Barbero a Domicilio</p>
+            </footer> 
+
+            <!-- EmailJS SDK versión 4 UMD -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  // Inicializar EmailJS con tu Public Key
+  emailjs.init("BQTyfK6ZxP0X2Wp6V");
+
+  // Probar que se cargó
+  console.log(emailjs);
+</script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+    
+</body>
+</html>

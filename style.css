@@ -1,0 +1,163 @@
+body {
+    font-family: "Lora", serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f0e6;
+    color: #2e1f16;
+    background-image: url("");
+    background-size: cover;      /* Ajusta la imagen a la pantalla */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    background: radial-gradient(circle, #8b5e3c, #8b5e3c);
+    color: #222;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'lora', serif;
+    margin: 0.5rem 0;
+}
+
+h1 {
+    font-family: 'Lora', serif; /* La fuente que importaste */
+    font-weight: 700;           
+    font-style: normal;          /* Si quieres itálica, pon italic */
+    font-size: 55px;            
+    color: #2e1f16;              /* Ejemplo de color, opcional */
+    text-align: center;          /* Centrarlo, opcional */
+}
+
+
+#pyp{
+    color: #fff;
+}
+
+hr{
+    border: none;             
+    height: 2px;              /* grosor de la línea */
+    background-color: #d9b382;
+    margin: 2rem 0;           /* espacio arriba y abajo */
+}
+
+
+section {
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #e0d6ca;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+#presentacion{
+    text-align: center;
+}
+
+.secciontipo{
+    padding-left: 20px;;
+}
+
+#p-sierra-nev{
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+    margin: 0;
+    color: #222;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+}
+
+.corte{
+    padding-left: 70px;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+}
+
+
+.button-reservar{
+    width: 40%;
+    height: 80px;
+    color: #a97456;
+    background-color: #222;
+    font-size: 18px;
+}
+
+.button-reservar:hover{
+    background-color: #444; /* o #333 */
+    color: #a97456;
+    width: 45%;
+    font-size: 22px;
+}
+
+
+#buttonOfEnd{
+    text-align: center;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #444;
+    color: #fff;
+}
+
+.whatsapp-float {
+    font-family: 'lora, serif';
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 28px;        /* tamaño del ícono */
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.2);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: radial-gradient(circle, #8b5e3c, #8b5e3c);
+    color: #fff;
+}
